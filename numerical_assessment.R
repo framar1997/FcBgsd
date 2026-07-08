@@ -19,9 +19,7 @@
 #
 # Returns:
 #   A scalar in [0, 1], where 0 indicates perfect similarity and 1 indicates
-#   maximum dissimilarity. Internally, s_c and s_h are divided by sqrt(n) to
-#   obtain standard errors, and the square root of the Hellinger distance is
-#   returned.
+#   maximum dissimilarity.
 # -----------------------------------------------------------------------------
 dh = function(x_c, x_h, s_c, s_h, n_c, n_h){
   s_c = s_c/sqrt(n_c)
